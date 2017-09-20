@@ -330,6 +330,14 @@ export class Schedule implements DoCheck,OnDestroy,OnInit,OnChanges,AfterViewChe
     gotoDate(date: any) {
         this.schedule.fullCalendar('gotoDate', date);
     }
+
+    prevScrol() {
+        this.schedule.fullCalendar('prevScrol');
+    }
+    
+    nextScrol() {
+        this.schedule.fullCalendar('nextScrol');
+    }
     
     prev() {
         this.schedule.fullCalendar('prev');
